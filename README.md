@@ -1,1 +1,1 @@
-<title>Atletica Kapiva Store</title>
+<h1 align="center"> Seu título aqui </h1>
