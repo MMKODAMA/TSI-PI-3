@@ -18,7 +18,7 @@ As seguintes ferramentas foram utilizadas para a construição desse projeto
 -  [CSS3]
 -  [Bootstrap](https://getbootstrap.com/)
 -  [Laravel](https://laravel.com)
--  [Laravel](https://laravel.com)
+-  [php](https://www.php.net)
 
 ## :triangular_flag_on_post: Status
 <p>
