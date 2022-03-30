@@ -15,7 +15,7 @@
 As seguintes ferramentas foram utilizadas para a construição desse projeto
 
 -  [HTML5](https://html5.org/)
--  [CSS3]
+-  CSS3
 -  [Bootstrap](https://getbootstrap.com/)
 -  [Laravel](https://laravel.com)
 -  [php](https://www.php.net)
