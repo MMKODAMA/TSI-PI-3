@@ -1,59 +1,44 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('/css/cadastro.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title></title>
+</head>
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
+<body>
+    <main>
+        <div class="container">
+            <div class="texts">
+                <h1 class="image animateanimated animatebackInLeft">Kapiva Store</h1>
+                <h2>Insira suas credenciais de login para aprovietar todos os benéficios de nossa Loja</h2>
 
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                <form method="POST" action="{{ route('register') }}">
+                    @csrf
+                    <fieldset>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+                        <input type="text" name="surname" id="surname" placeholder="Digite sua sobrenome" required>
+                    </fieldset>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    <fieldset>
+                        <input type="password" name="password" id="senha" placeholder="Digite sua senha" required>
+                        <!--<input type="password" name="confPassword" id="confPassword" placeholder="Confirmar senha" required> -->
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" name="cpf" id="cpf" placeholder="Digite seu cpf" required>
+                        <input type="text" name="telefone" id="telefone" placeholder="telefone" require>
+                    </fieldset>
+                    <button type="submit">Cadastrar</button>
+                </form>
             </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            <div class="image animateanimated animatebackInRight">
+                <img src="{{ asset('/img/logo.png') }}">
             </div>
+        </div>
+    </main>
+</body>
 
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+</html>

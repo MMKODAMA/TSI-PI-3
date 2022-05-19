@@ -7,6 +7,8 @@
 
 
 <div class="container">
-    aqui é a index
+    @foreach (produtos as produto)
+
+    @endforeach
 </div>
  @endsection

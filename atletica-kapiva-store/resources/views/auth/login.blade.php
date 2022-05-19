@@ -1,55 +1,39 @@
-<x-guest-layout>
-    <x-auth-card>
+<!DOCTYPE html>
+<html lang="en">
 
-        <x-slot name="logo">
-            <img src="/img/logo.png" width="400px">
-        </x-slot>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/login.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title></title>
+</head>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
+<body>
+    <main>
+        <div class="container">
+            <div class="texts">
+                <h1 class="image animateanimated animatebackInLeft">Kapiva Store</h1>
+                <h2>Insira suas credenciais de login para aprovietar todos os benéficios de nossa Loja</h2>
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                <form method="POST" action="{{route('login')}}">
+                    @csrf
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
+                    <button type="submit">Entrar</button>
+                </form>
 
-            <!-- Email Address -->
-            <div>
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+                <p>Esqueceu sua senha? <a href="#">Recupere aqui!</a></p>
+                <p>Não tem uma conta? <a href="#">Registre-se!</a></p>
             </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="current-password" />
+            <div class="image animateanimated animatebackInRight">
+                <img src="/img/logo.png">
             </div>
+        </div>
+    </main>
+</body>
 
-            <!-- Remember Me -->
-            <div class="block mt-4">
-                <label for="remember_me" class="inline-flex items-center">
-                    <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-button class="ml-3">
-                    {{ __('Log in') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+</html>

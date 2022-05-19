@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F2F3F9;
+}
+
+h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    color: #f77e09;
+}
+
+h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    width: 500px;
+    color: #000000;
+}
+
+form input{
+    width: 450px;
+    height: 35px;
+    background: white;
+    border: 2px solid #E77312;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 2%;
+    text-indent: 10px;
+}
+
+form input:focus{
+    transform: scale(1.01);
+    margin-left: 5px;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    background-color: #F96E07;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    margin-left: 3px;
+
+}
+
+.container{
+    display: flex;
+}
+
+.texts{
+    padding: 2%;
+    margin: 50px;
+}
+
+.image img{
+    width: 600px;
+    height: 600px;
+    transition: 0.2s;
+}
+
+.image img:hover{
+    padding-left: 20px;
+    transition: 0.2s;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset:nth-child(1){
+    display:flex;
+}
+fieldset:nth-child(1) input{
+    width: 220px;
+    margin-right: 5px;
+}
+
+fieldset:nth-child(3){
+    display:flex;
+}
+fieldset:nth-child(3) input{
+    width: 220px;
+    margin-right: 5px;
+}
+fieldset:nth-child(4){
+    display:flex;
+}
+fieldset:nth-child(4) input{
+    width: 220px;
+    margin-right: 5px;
+}
