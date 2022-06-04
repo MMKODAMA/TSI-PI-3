@@ -84,7 +84,7 @@
                 -->
 
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none " href="{{ route('tag.trash') }}">
+                        <a class="nav-link text-decoration-none " href="{{ route('cart.index') }}">
                             Carrinho
                         </a>
                     </li>

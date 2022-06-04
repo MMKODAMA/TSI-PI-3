@@ -5,7 +5,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\eCommerceController;
-use App\Http\Controllers\CarrinhoCotroller;
+use App\Http\Controllers\CarrinhoController;
 use App\Http\Controllers\PedidoController;
 
 Route::get('/', [eCommerceController::class, 'index'])->name('home');
@@ -17,9 +17,9 @@ Route::get('/show/{product}', [eCommerceController::class, 'showProduct'])->name
 require __DIR__.'/auth.php';
 
 Route::middleware(['auth'])->group(function(){
-    Route::get('/cart', [CarrinhoCotroller::class, 'index'])->name('cart.index');
-    Route::post('/cart/{product}', [CarrinhoCotroller::class, 'store'])->name('cart.store');
-    Route::delete('/cart/{product}', [CarrinhoCotroller::class, 'destroy'])->name('cart.destroy');
+    Route::get('/cart', [CarrinhoController::class, 'index'])->name('cart.index');
+    Route::post('/cart/{product}', [CarrinhoController::class, 'store'])->name('cart.store');
+    Route::delete('/cart/{product}', [CarrinhoController::class, 'destroy'])->name('cart.destroy');
     Route::post('/order', [PedidoController::class, 'store'])->name('order.store');
     Route::get('/order', [PedidoController::class, 'index'])->name('order.index');
 });

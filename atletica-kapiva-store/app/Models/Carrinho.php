@@ -9,7 +9,7 @@ class Carrinho extends Model
 {
     use HasFactory;
     protected $fillable = ['user_id', 'product_id', 'units'];
-
+    protected $table = 'carts';
     public function Product(){
         return $this->belongsTo(Product::class);
     }

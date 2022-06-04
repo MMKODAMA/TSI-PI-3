@@ -6,7 +6,7 @@
 @section('content')
 <div class="container">
 
-    <table class="table table-secondary table-striped">
+    <table class="table table-secondary table-striped mt-5" >
         <thead>
             <tr>
                 <td scope="col">Imagem</td>
