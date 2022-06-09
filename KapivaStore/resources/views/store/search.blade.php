@@ -5,7 +5,7 @@
         <div class="row">
             <div class="mx-auto col-10 text-center">
                 <h2 class="text-uppercase">{{ $title }}</h2>
-                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, nobis!</p>
+                <p class="text-muted">Resultados para sua pesquisa</p>
             </div>
         </div>
         <div class="row">

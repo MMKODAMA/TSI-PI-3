@@ -4,7 +4,7 @@
     <section class="container">
         <div class="row">
             @foreach ($products as $product)
-                <div class="mx-3 col-sm-10 col-md-6 col-lg-3 my-2">
+                <div class="mx-3 col-sm-10 col-md-6 col-lg-2 my-2" style="height:200px;width=100px">
                     <img src="{{ asset($product->image) }}" class="img-fluid">
                     <span class="d-block h6 text-center mt-3">{{ $product->name }}</span>
                     <div class="text-center">
