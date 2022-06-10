@@ -20,7 +20,7 @@ As seguintes ferramentas foram utilizadas para a construção desse projeto
 -  [Laravel](https://laravel.com)
 -  [php](https://www.php.net)
 
-## :triangular_chekered_flag_on_post: Status
+## :checkered_flag: Status
 <p>
 Concluido
 </p>
