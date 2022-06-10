@@ -7,7 +7,7 @@
 
 ## :bookmark: Sobre
 <p>
-  e-commerce
+  E-Commerce da Atletica Kapiva , Desenvolvido como projeto do 3°Semestre do Curso de Tecnologia em Sistemas para Internet
 </p>
 
 ## :rocket: Tecnologias
