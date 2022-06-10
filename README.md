@@ -22,7 +22,7 @@ As seguintes ferramentas foram utilizadas para a construção desse projeto
 
 ## :triangular_flag_on_post: Status
 <p>
-Em Desenvolvimento
+Concluido
 </p>
 
 
