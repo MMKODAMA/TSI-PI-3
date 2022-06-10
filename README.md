@@ -12,7 +12,7 @@
 
 ## :rocket: Tecnologias
 
-As seguintes ferramentas foram utilizadas para a construição desse projeto
+As seguintes ferramentas foram utilizadas para a construção desse projeto
 
 -  [HTML5](https://html5.org/)
 -  CSS3
